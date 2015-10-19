@@ -6,6 +6,7 @@ class profile::base {
     pip        => 'present',
     dev        => 'present',
     virtualenv => 'present',
+    gunicorn   => 'absent',
   }
 
 }
