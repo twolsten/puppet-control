@@ -1,4 +1,5 @@
 class profile::base {
+  include epel
 
   class {'python':
     version    => 'system',
