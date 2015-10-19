@@ -24,7 +24,7 @@ mod 'puppet-python',
   :git => 'git@github.com:stankevich/puppet-python.git',
   :ref => '1.9.8'
 
-mod 'puppet-module-epel',
+mod 'puppet-epel',
   :git => 'git@github.com:stahnma/puppet-module-epel.git',
   :ref => '1.1.1'
 
