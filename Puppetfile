@@ -18,3 +18,8 @@ mod 'puppetlabs-stdlib',
 mod 'puppetlabs-ntp',
   :git => 'git@github.com:puppetlabs/puppetlabs-ntp.git',
   :ref => '4.1.0'
+
+
+mod 'puppet-python',
+  :git => 'git@github.com:stankevich/puppet-python.git',
+  :ref => '1.9.8'
