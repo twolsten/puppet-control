@@ -15,3 +15,6 @@ mod 'puppetlabs-stdlib',
   :ref => 'v2.2.1'
 
 
+mod 'puppetlabs-ntp',
+  :git => 'git@github.com:puppetlabs/puppetlabs-ntp.git',
+  :ref => '4.1.0'
