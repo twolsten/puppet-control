@@ -31,6 +31,7 @@ mod 'puppet-python',
 mod 'puppet-epel',
   :git => 'git@github.com:stahnma/puppet-module-epel.git',
   :ref => '1.1.1'
+
 mod 'linux_config',
   :git => 'git@github.com:twolsten/puppet-linux_config.git',
-  
+  :ref => 'v0.0.1' 
