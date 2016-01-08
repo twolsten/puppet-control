@@ -14,4 +14,8 @@ mod 'puppetlabs-stdlib',
   :git => 'git@github.com:puppetlabs/puppetlabs-stdlib.git',
   :ref => 'v2.2.1'
 
+mod 'puppet-module-ssh',
+  :git => 'git@github.com:ghoneycutt/puppet-module-ssh.git',
+  :ref => 'v3.33.1'
+
 
