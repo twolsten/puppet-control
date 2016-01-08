@@ -10,7 +10,7 @@ mod 'puppet-selinux',
   :ref => 'v0.2.5'
 
 
-mod 'puppetlabs-stdlib',
+mod 'ghoneycutt/puppetlabs-stdlib',
   :git => 'git@github.com:puppetlabs/puppetlabs-stdlib.git',
   :ref => 'v2.2.1'
 
