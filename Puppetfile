@@ -34,4 +34,4 @@ mod 'puppet-epel',
 
 mod 'linux_config',
   :git => 'git@github.com:twolsten/puppet-linux_config.git',
-  :ref => 'v0.0.1' 
+  :ref => 'v0.0.2' 
