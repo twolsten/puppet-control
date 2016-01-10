@@ -1,10 +1,25 @@
 class profile::sshd {
 
-  class {ssh:
-    sshd_config_print_motd => 'yes',
-    sshd_config_banner     => '/etc/banner',
-    sshd_x11_forwarding    => 'yes',
-    permit_root_login      => 'no',
+  class ssh {
+    package {'openssh-server':
+      ensure => 'installed',
+    }
+
+    service {'sshd':
+      ensure  => 'running',
+      enable  => 'true',
+      require => Package["openssh-server"],
+    }
+
+    augeas { 'configure_sshd':
+      context => '/files/etc/ssh/sshd_config',
+      changes => [ "set PermitRootLogin no",
+                   "set Banner '/etc/banner",
+                ],
+      require => Package['openssh-server'],
+      notify  => Service['sshd'],
+    }
   }
 }
 
+  
